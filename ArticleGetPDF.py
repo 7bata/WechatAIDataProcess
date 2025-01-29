@@ -49,11 +49,10 @@ def web_print_save_pdf(url, filename):
 
 # Call the function
 df = pd.read_excel('Article Summary.xlsx')
-titles = df.iloc[:, 0] # read the title column
 urls = df.iloc[:, 2] # read the link column
 count = 1
-for url, title in zip(urls, titles):
+for url in urls:
     print('Processing {}'.format(count))
-    web_print_save_pdf(url, title)
+    web_print_save_pdf(url, 'file_{}'.format(count))
     count += 1
 print('Finished')
