@@ -1,7 +1,5 @@
 # coding=gbk
 # -*- coding:uft-8 -*-
-# https://www.bilibili.com/video/BV1qM411P72g/?spm_id_from=333.337.search-card.all.click&vd_source=80640f970e995e05be64a1b68ef3b120
-
 import json
 import requests
 import datetime
